@@ -6,3 +6,14 @@
 
 program mass_stack;
 
+type
+  pitem = ^item;
+  item = record
+  data: integer;
+  prev: pitem
+  end;
+  
+var
+  a: array of integer;
+  
+  
